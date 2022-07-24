@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  codechallenge.api:
+    image: ${DOCKER_REGISTRY-}codechallengeapi
+    container_name: "Codechallenge.api"
+    build:
+      context: .
+      dockerfile: CodeChallenge.Api/Dockerfile
+    ports:
+      - "35020:80"
+      - "35021:443"
