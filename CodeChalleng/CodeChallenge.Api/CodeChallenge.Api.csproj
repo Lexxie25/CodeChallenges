@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\AlbumVM\Album.Models.csproj" />
+    <ProjectReference Include="..\Process.Repository\Processor.Repository.csproj" />
   </ItemGroup>
 
 </Project>
