@@ -9,7 +9,7 @@ namespace CodeChallenge.Api.Controllers
     public class SwapController : ControllerBase
     {
 
-        [HttpPost]
+        [HttpPost("{swap}")]
         public ActionResult<char> CupsSwap(string[] swaps)
         {
             //Regex finds pattern with endpoint and start point 
